@@ -7,12 +7,11 @@ Given the following code list the order of console.logs:
 ```javascript
 	console.log("Hello")
 	
-	$.ajax({
-		url: 'https://randomuser.me/api/',
-		success: function(data){
-			console.log("Hi")
-		}
-	})
+        fetch('https://randomuser.me/api/')
+          .then( res => res.json() )
+          .then( data => {
+            console.log("Hi") 
+          })
 	
 	console.log("Sup?")
 ```
@@ -23,12 +22,11 @@ When fetchData is executed what will be console logged?
 
 ```javascript
 function fetchData(){
-	var data = $.ajax({
-		url: 'https://randomuser.me/api/',
-		success: function(response){
-			// Do something with response
-		}
-	})
+	var data = fetch('https://randomuser.me/api/')
+          .then( res => res.json() )
+          .then( data => {
+            console.log("Hi") 
+          })
 	console.log(data)	
 }
 
@@ -45,4 +43,5 @@ Write out the request and response cycle. What is it's purpose? How does it work
 
 ## Fifth Question
 
-Your task is to use [this](https://randomuser.me/api/) url to make an AJAX request. Have someone use the provided index.js to render the returned data to the provided index.html. Use the labels to append the right data in the h4's, h3's and img tags.
+Check out the JSON you get from making a GET request to [this](https://randomuser.me/api/) url (https://randomuser.me/api/).
+Open up the provided `src/index.html` file in the browser, in `src/index.js`, make an AJAX request to that url when the button is clicked and append the retrieved information to the DOM in the appropriate places. Use the labels to append the right data in the h4's, h3's and img tags.
