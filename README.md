@@ -31,6 +31,18 @@ function fetchData(){
 fetchData()
 ```
 
+What will be console logged when the following code is run? Why?
+
+```javascript
+function fetchData(){
+        var data = fetch('https://randomuser.me/api/')
+          .then( res => res.json() )
+          .then( console.log )
+}
+
+fetchData()
+```
+
 ## Third Question
 
 In your own words: what does asynchronous mean?
