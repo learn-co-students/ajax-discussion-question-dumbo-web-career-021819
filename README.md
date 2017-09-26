@@ -24,9 +24,7 @@ When fetchData is executed what will be console logged?
 function fetchData(){
 	var data = fetch('https://randomuser.me/api/')
           .then( res => res.json() )
-          .then( data => {
-            console.log("Hi") 
-          })
+          .then( res => res )
 	console.log(data)	
 }
 
