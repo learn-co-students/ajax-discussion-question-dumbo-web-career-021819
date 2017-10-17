@@ -37,7 +37,7 @@ What will be console logged when the following code is run? Why?
 function fetchData(){
         var data = fetch('https://randomuser.me/api/')
           .then( res => res.json() )
-          .then( console.log )
+          .then( json => console.log(json) )
 }
 
 fetchData()
