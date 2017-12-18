@@ -61,7 +61,7 @@ In your own words: what does asynchronous mean?
 
 ## Fourth Question
 
-Write out the request and response cycle. What is it's purpose? How does it work?
+Write out the request and response cycle. What is its purpose? How does it work?
 
 ## Fifth Question
 
