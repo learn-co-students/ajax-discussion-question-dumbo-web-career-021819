@@ -1,6 +1,14 @@
-# Ajax Discussion Questions
+# Discussion Questions: AJAX
 
-## First Question
+## Objectives
+
+* Identify synchronous and asynchronous code
+* Describe the process of communicating with the server
+* Process data successfully returned from fetch()
+
+## Exercise
+
+### Question 1
 
 Given the following code list the order of console.logs:
 
@@ -16,7 +24,7 @@ fetch('https://randomuser.me/api/')
 console.log("Sup?")
 ```
 
-## Second Question
+### Question 2
 
 When fetchData is executed what will be console logged?
 
@@ -55,15 +63,16 @@ function fetchData(){
 fetchData()
 ```
 
-## Third Question
+### Question 3
 
 In your own words: what does asynchronous mean?
 
-## Fourth Question
+### Question 4
 
 Write out the request and response cycle. What is its purpose? How does it work?
 
-## Fifth Question
+### Question 5
 
 Check out the JSON you get from making a GET request to [this](https://randomuser.me/api/) url (https://randomuser.me/api/).
+
 Open up the Github repositiory for this reading and view the provided `src/index.html` file in the browser. In `src/index.js`, make an AJAX request to that url when the button is clicked and append the retrieved information to the DOM. Use the labels to append the right data in the appropriate h4's, h3's and img tags.
