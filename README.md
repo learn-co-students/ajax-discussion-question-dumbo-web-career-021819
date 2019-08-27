@@ -30,7 +30,7 @@ When fetchData is executed what will be console logged?
 
 ```javascript
 function fetchData(){
-        var data = fetch('https://randomuser.me/api/')
+        let data = fetch('https://randomuser.me/api/')
           .then( res => res.json() )
           .then( res => res )
         console.log(data)	
@@ -43,7 +43,7 @@ What will be console logged when the following code is run? Why?
 
 ```javascript
 function fetchData(){
-        var data = fetch('https://randomuser.me/api/')
+        let data = fetch('https://randomuser.me/api/')
           .then( res => res.json() )
           .then( json => console.log(json) )
 }
@@ -55,7 +55,7 @@ What will be console logged when the following code is run? Why?
 
 ```javascript
 function fetchData(){
-        var data = fetch('https://randomuser.me/api/')
+        let data = fetch('https://randomuser.me/api/')
           .then( res => res.json() )
           .then( console.log )
 }
