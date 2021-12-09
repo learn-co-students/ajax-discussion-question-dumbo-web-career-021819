@@ -10,7 +10,7 @@
 
 ### Question 1
 
-Given the following code list the order of console.logs:
+Given the following code, list the order of console.logs:
 
 ```javascript
 console.log("Hello")
